@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+
+    <TextView android:id="@+id/txtnumA"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="A="
+        android:textColor="#0000FF"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtnumA"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtnumA"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView android:id="@+id/txtnumB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnumA"
+        android:layout_marginTop="20dp"
+        android:text="B="
+        android:textColor="#0000FF"
+        android:textSize="20sp" />
+
+    <EditText android:id="@+id/edtnumB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtnumA"
+        android:layout_toRightOf="@id/txtnumB"
+        android:textSize="20sp"
+        android:inputType="number"/>
+
+    <Button android:id="@+id/btnPage2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnumB"
+        android:layout_marginTop="20dp"
+        android:text="開啟另一頁面顯示兩數之和" />
+
+</RelativeLayout>
